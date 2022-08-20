@@ -1,0 +1,103 @@
+/* header */
+
+.nav,
+.contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+.nav__link .contacts {
+  display: block;
+  padding: 32px 0;
+}
+
+.nav__link {
+  color: var(--main-font--);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  transition: color var(--animation);
+}
+.nav__link:hover {
+  color: var(--color-accent);
+}
+.nav__link--active-current {
+  color: var(--color-accent);
+  position: relative;
+}
+.nav__link--active-current::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+/* Остальной код */
+.contacts__link {
+  display: flex;
+  align-items: center;
+  transition: color var(--animation);
+}
+.contacts__items:hover,
+.contacts__items:focus {
+  fill: var(--color-accent);
+}
+.contacts__link {
+  color: var(--color-grey);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.contacts__link:hover {
+  color: var(--color-accent);
+}
+
+.icon-envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-phon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* MAIN */
+/* hero section */
+
+/* modal window */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--animation), visibility var(--animation);
+}
+
+/* skills */
+
+/* what we are doing */
+
+/*  clients */
+
+/* page portfolio */
+
+/*  project */
+
+/* footer */
+
+/* join footer */

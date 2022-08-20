@@ -1,0 +1,11 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 93px;
+  }
+}

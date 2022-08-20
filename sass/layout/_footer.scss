@@ -1,0 +1,123 @@
+.footer {
+  background-color: var(--dark-bg-cl--);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.footer-join {
+  margin-left: 70px;
+}
+.join-titel {
+  font-family: var(--main-font--);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.join-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.join-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation);
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--color-accent);
+}
+/* sub footer */
+.footer-sub {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.sub-form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.sub-form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-sub-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color var(--animation);
+}
+
+.footer-sub-input[placeholder] {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-sub-input:hover,
+.footer-sub-input:focus {
+  border-color: var(--color-accent);
+}
+
+.footer-sub-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  gap: 10px;
+  fill: var(--color-white);
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+}

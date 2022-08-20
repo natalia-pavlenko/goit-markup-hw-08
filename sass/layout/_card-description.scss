@@ -1,0 +1,18 @@
+.card-description {
+  padding: 30px 10px;
+  text-align: center;
+
+  &__list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 10px;
+  }
+  &__position {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+    color: #757575;
+    letter-spacing: 0.03em;
+  }
+}

@@ -1,0 +1,64 @@
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project__card {
+  --items: 3;
+}
+.item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.overlay-box {
+  overflow: hidden;
+  height: 294px;
+  position: relative;
+}
+.card-overlay {
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(0);
+  position: absolute;
+  opacity: 0;
+  transition: opacity var(--animation), transform var(--animation);
+}
+.overlay-box__text {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  padding: 63px 24px;
+}
+.project__description {
+  padding: 20px 20px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.project__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: rgba(33, 33, 33, 1);
+  margin-bottom: 4px;
+}
+.project__filter {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: rgba(117, 117, 117, 1);
+}
+.project__link {
+  display: block;
+  transition: box-shadow var(--animation);
+}
+.project__link:hover,
+.project__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project__link:hover .card-overlay,
+.project__link:focus .card-overlay {
+  opacity: 1;
+  transform: translateY(-100%);
+}

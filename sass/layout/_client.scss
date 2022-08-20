@@ -1,0 +1,40 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.client__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: fill var(--animation), border-color var(--animation);
+}
+.client__link:hover,
+.client__link:focus {
+  fill: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+.client__svg {
+  width: 106px;
+  height: 60px;
+}
